@@ -7,3 +7,6 @@
 ### simplifying restful api use on iOS with mantle
 - https://www.toptal.com/ios/simplifying-restful-api-use-and-data-persistence-on-ios-with-mantle-and-realm
 
+### Understanding Mantle
+- http://www.ios122.com/2015/10/mantle/
+- https://github.com/Mantle/Mantle
