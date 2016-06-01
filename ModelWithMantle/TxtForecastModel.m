@@ -22,25 +22,10 @@
              };
 }
 
-+ (NSDateFormatter *)dateFormatter {
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    dateFormatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"CST"];
-    dateFormatter.dateFormat = @"'T'HH:mm'Z'";
-    return dateFormatter;
-}
-
 #pragma mark - JSON Transformer
 
 + (NSValueTransformer *)forecastdayAryJSONTransformer {
     return [MTLJSONAdapter arrayTransformerWithModelClass:ForecastdayModel.class];
 }
 
-/*
-+ (NSValueTransformer *)dateTimeJSONTransformer {
-    
-    return [MTLValueTransformer transformerUsingForwardBlock:^id(id value, BOOL *success, NSError *__autoreleasing *error) {
-        return [self.dateFormatter dateFromString:value];
-    }];
-}
-*/
 @end

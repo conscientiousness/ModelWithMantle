@@ -27,7 +27,6 @@ static NSString *const kForecast10DayPath = @"/api/6ac934eece7f0b83/forecast10da
         [ForecastItems sharedInstance].forecastItemsArray = model.forecastdayAry;
         [ForecastItems sharedInstance].updateTime = model.updateTime;
         success(YES);
-        NSLog(@"model.forecastdayAry = %@",[ForecastItems sharedInstance].updateTime);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"%@",[[[task response] URL] absoluteString]);
         failure(error);

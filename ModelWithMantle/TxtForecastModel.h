@@ -11,5 +11,4 @@
 @interface TxtForecastModel : MTLModel <MTLJSONSerializing>
 @property(nonatomic, copy) NSString *updateTime;
 @property(nonatomic, copy) NSMutableArray *forecastdayAry;
-+ (NSDateFormatter *)dateFormatter;
 @end
