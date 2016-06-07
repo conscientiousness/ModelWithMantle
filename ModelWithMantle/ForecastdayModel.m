@@ -14,6 +14,7 @@
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{
+             @"image": @"icon_url",
              @"title": @"title",
              @"detail": @"fcttext"
              };

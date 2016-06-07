@@ -9,9 +9,9 @@
 #import "ForecastDataSource.h"
 #import "ForecastItems.h"
 #import "ForecastdayModel.h"
+#import "WeatherCell.h"
 
 #define kForecastItemsArray [ForecastItems sharedInstance].forecastItemsArray
-static NSString *const kCellIdentifier = @"aCell";
 
 # pragma mark - [8]
 
@@ -26,14 +26,9 @@ static NSString *const kCellIdentifier = @"aCell";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellIdentifier];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:kCellIdentifier];
-    }
-    
-    ForecastdayModel *item = kForecastItemsArray[indexPath.row];
-    cell.textLabel.text = item.title;
-    cell.detailTextLabel.text = item.detail;
+    WeatherCell *cell = [tableView dequeueReusableCellWithIdentifier:kWeatherCellId forIndexPath:indexPath];
+    ForecastdayModel *item = (ForecastdayModel*)kForecastItemsArray[indexPath.row];
+    [cell setUpCellWithModel:item];
     return cell;
 }
 

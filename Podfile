@@ -8,4 +8,5 @@ target 'ModelWithMantle' do
   # Pods for ModelWithMantle
     pod 'AFNetworking'
     pod 'Mantle'
+    pod 'YYWebImage'
 end

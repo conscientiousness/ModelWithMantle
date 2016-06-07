@@ -10,6 +10,7 @@
 #import "ForecastDataSource.h"
 #import "APIManager.h"
 #import "ForecastItems.h"
+#import "WeatherCell.h"
 
 @interface MainVC ()
 @property (nonatomic, strong) UILabel *titleLabel;
@@ -63,7 +64,10 @@
 - (void)setUpTableView {
     
     self.aDataSource = [ForecastDataSource new];
+    [self.aTableView registerClass:[WeatherCell class] forCellReuseIdentifier:kWeatherCellId];
     self.aTableView.dataSource = self.aDataSource;
+    self.aTableView.rowHeight = UITableViewAutomaticDimension;
+    self.aTableView.estimatedRowHeight = 50.0;
 }
 
 # pragma mark - [10]

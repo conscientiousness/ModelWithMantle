@@ -12,6 +12,7 @@
 		F4500EC51CFE9AA1000433EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4500EC41CFE9AA1000433EB /* AppDelegate.m */; };
 		F4500EC81CFE9AA1000433EB /* MainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4500EC71CFE9AA1000433EB /* MainVC.m */; };
 		F4500ECD1CFE9AA1000433EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4500ECC1CFE9AA1000433EB /* Assets.xcassets */; };
+		F4CA331F1D06B447005142D2 /* WeatherCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CA331E1D06B447005142D2 /* WeatherCell.m */; };
 		F4D8682F1CFEB4B50073801E /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D8682C1CFEB4B50073801E /* APIManager.m */; };
 		F4D868301CFEB4B60073801E /* SessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D8682E1CFEB4B50073801E /* SessionManager.m */; };
 		F4D868361CFEC2370073801E /* ForecastDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D868351CFEC2370073801E /* ForecastDataSource.m */; };
@@ -34,6 +35,8 @@
 		F4500EC71CFE9AA1000433EB /* MainVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainVC.m; sourceTree = "<group>"; };
 		F4500ECC1CFE9AA1000433EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4500ED11CFE9AA1000433EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4CA331D1D06B447005142D2 /* WeatherCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherCell.h; sourceTree = "<group>"; };
+		F4CA331E1D06B447005142D2 /* WeatherCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherCell.m; sourceTree = "<group>"; };
 		F4D8682B1CFEB4B50073801E /* APIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIManager.h; sourceTree = "<group>"; };
 		F4D8682C1CFEB4B50073801E /* APIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIManager.m; sourceTree = "<group>"; };
 		F4D8682D1CFEB4B50073801E /* SessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionManager.h; sourceTree = "<group>"; };
@@ -163,6 +166,8 @@
 		F4D868331CFEB9E30073801E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F4CA331D1D06B447005142D2 /* WeatherCell.h */,
+				F4CA331E1D06B447005142D2 /* WeatherCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -288,6 +293,7 @@
 			files = (
 				F4D868301CFEB4B60073801E /* SessionManager.m in Sources */,
 				F4D8682F1CFEB4B50073801E /* APIManager.m in Sources */,
+				F4CA331F1D06B447005142D2 /* WeatherCell.m in Sources */,
 				F4D868491CFECAF20073801E /* ForecastdayModel.m in Sources */,
 				F4500EC81CFE9AA1000433EB /* MainVC.m in Sources */,
 				F4D868361CFEC2370073801E /* ForecastDataSource.m in Sources */,

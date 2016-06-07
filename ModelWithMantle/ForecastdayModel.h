@@ -9,6 +9,7 @@
 #import <Mantle/Mantle.h>
 
 @interface ForecastdayModel : MTLModel <MTLJSONSerializing>
+@property(nonatomic, copy) NSString *image;
 @property(nonatomic, copy) NSString *title;
 @property(nonatomic, copy) NSString *detail;
 @end
